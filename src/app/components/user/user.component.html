@@ -1,0 +1,23 @@
+<h2>user component!</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Email</th>
+      <th scope="col">Teléfono</th>
+      <th scope="col">Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <th scope="row">{{user.id}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.website}}</td>
+    </tr>
+  </tbody>
